@@ -1,8 +1,4 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
 }
 
 .logo {
@@ -39,4 +35,12 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.hero-fade-in {
+  opacity: 0;
+  transition: opacity 2.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.hero-fade-in.visible {
+  opacity: 1;
 }
