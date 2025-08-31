@@ -44,3 +44,76 @@
 .hero-fade-in.visible {
   opacity: 1;
 }
+
+/* Typing Animation Overlay */
+.typing-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 40%;
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 10;
+  pointer-events: none; /* Allows mouse events to pass through to the image below */
+  margin-left: 0.1rem; /* Move overlay closer to the left screen edge */
+}
+
+.typing-container {
+  text-align: center;
+  max-width: 500px;
+  padding: 2rem;
+  pointer-events: auto; /* Re-enables pointer events for the text */
+}
+
+.typing-text {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  line-height: 1.2;
+  min-height: 4.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.8);
+}
+
+.cursor {
+  animation: blink 1s infinite;
+  margin-left: 2px;
+  color: #a7ff64;
+}
+
+.language-indicator {
+  font-size: 1.2rem;
+  color: #ccc;
+  margin-top: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.8);
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .typing-overlay {
+    width: 100%;
+    padding: 1rem;
+  }
+  
+  .typing-text {
+    font-size: 2.5rem;
+    min-height: 3rem;
+  }
+  
+  .language-indicator {
+    font-size: 1rem;
+  }
+}
