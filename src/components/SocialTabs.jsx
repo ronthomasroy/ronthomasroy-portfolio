@@ -22,6 +22,16 @@ export default function SocialTabs() {
       name: 'Email',
       url: 'mailto:ronroy003@gmail.com',
       
+    },
+    {
+      name: 'HFace',  
+      url: 'https://huggingface.co/rontroy',
+      
+    },
+    {
+      name: 'Kaggle',
+      url: 'https://www.kaggle.com/rontroy',
+      
     }
   ];
 
