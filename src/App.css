@@ -101,6 +101,47 @@
   51%, 100% { opacity: 0; }
 }
 
+/* Social Tabs Styles */
+.social-tabs-container {
+  position: absolute;
+  top: 20%;
+  right: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  z-index: 20;
+}
+
+.social-tab {
+  display: block;
+  text-decoration: none;
+  color: white;
+  padding: 0.5rem 0;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+.social-tab:hover {
+  color: #a7ff64;
+  text-shadow: 0 0 10px rgba(167, 255, 100, 0.6), 0 0 20px rgba(167, 255, 100, 0.4);
+}
+
+.social-tab-content {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: 500;
+  font-size: 1.6rem; /* Changed from 1.3rem to 1.8rem */
+}
+
+.social-icon {
+  font-size: 1.2rem;
+}
+
+.social-name {
+  white-space: nowrap;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .typing-overlay {
@@ -114,6 +155,23 @@
   }
   
   .language-indicator {
+    font-size: 1rem;
+  }
+
+  .social-tabs-container {
+    right: 1rem;
+    gap: 0.75rem;
+  }
+
+  .social-tab {
+    padding: 0.4rem 0;
+  }
+
+  .social-tab-content {
+    font-size: 1.3rem; /* Changed from 1.1rem to 1.4rem */
+  }
+
+  .social-icon {
     font-size: 1rem;
   }
 }

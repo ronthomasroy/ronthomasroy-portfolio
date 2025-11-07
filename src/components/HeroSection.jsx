@@ -1,5 +1,6 @@
 // src/components/HeroSection.jsx
 import React, { useRef, useState, useEffect } from "react";
+import SocialTabs from "./SocialTabs";
 
 // Multilingual typing animation component
 function MultilingualTyping() {
@@ -125,6 +126,10 @@ export default function HeroSection() {
             transition: "clip-path 0.1s",
           }}
         />
+        
+        {/* Social Media Tabs */}
+        <SocialTabs />
+        
         {/* Add overlay text/buttons here */}
       </div>
     </div>
