@@ -55,8 +55,8 @@ export default function SocialTabs() {
   const tabVariants = {
     hidden: { 
       opacity: 0,
-      x: 50,
-      scale: 0.8
+      x: 100,
+      scale: 0.9
     },
     visible: {
       opacity: 1,

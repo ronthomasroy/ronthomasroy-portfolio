@@ -131,7 +131,7 @@
   align-items: center;
   gap: 0.5rem;
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1.6rem; /* Changed from 1.3rem to 1.8rem */
 }
 
 .social-icon {
@@ -168,7 +168,7 @@
   }
 
   .social-tab-content {
-    font-size: 1.1rem;
+    font-size: 1.3rem; /* Changed from 1.1rem to 1.4rem */
   }
 
   .social-icon {
